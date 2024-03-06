@@ -1,6 +1,6 @@
 @font-face {
-	font-family: Roboto;
-	src: url(/roboto.ttf);
+	font-family: LearningCurve;
+	src: url(/LearningCurve_OT.otf);
 }
 
 html {
@@ -9,9 +9,9 @@ html {
 
 body {
 	margin: 0;
-	font-family: "Roboto", sans-serif;
-	background: #1b262c;
-	color: #79c6ff;
+	font-family: LearningCurve;
+	background: #f897e8;
+	color: #ff02d5;
 }
 
 #root {
@@ -58,9 +58,9 @@ body {
 	text-align: center;
 	text-decoration: none;
 	border-radius: 20px;
-	border: 2px solid #606060;
-	background: #808080;
-	color: white;
+	border: 2px solid #000000;
+	background: #cc00ff;
+	color: rgb(132, 0, 255);
 }
 
 .button:hover,
@@ -91,7 +91,7 @@ summary {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 60px;
 	font-weight: 900;
 	margin: 0;
 }
@@ -140,7 +140,7 @@ a:active {
 .header-section {
 	color: white;
 	text-align: center;
-	background: #3498db;
+	background: #ff34b1;
 	position: relative;
 }
 
@@ -155,7 +155,7 @@ a:active {
 	font-size: 2.7rem;
 	font-weight: bold;
 	margin: 0;
-	color: #1d2a57;
+	color: #7a08a7;
 	font-family: Arial;
 	text-wrap: balance;
 	overflow-wrap: break-word;
@@ -173,7 +173,7 @@ a:active {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background: #1e5780;
+	background: #ff34b1;
 	color: white;
 	padding: 18px;
 	text-align: center;
@@ -188,7 +188,7 @@ a:active {
 	display: flex;
 	justify-content: left;
 	gap: 0.25rem;
-	background: #1e5780;
+	background: #7a08a7;
 	color: white;
 	border-radius: 0.5rem;
 	padding: 0.5rem;
@@ -216,9 +216,9 @@ a:active {
 .updoot-info {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	background: #263461;
+	background: #ff8ce2;
 	border-radius: 0.75rem;
-	border: 2px solid #3498db;
+	border: 2px solid #ff1fce;
 }
 
 .total {
@@ -226,8 +226,8 @@ a:active {
 	justify-content: center;
 	align-items: center;
 	padding: 0.5rem;
-	border-left: 2px solid #3498db;
-	border-right: 2px solid #3498db;
+	border-left: 2px solid #ff1fce;
+	border-right: 2px solid #ff1fce;
 }
 
 .button-wrapper {
@@ -237,8 +237,8 @@ a:active {
 }
 
 .metadata-wrapper {
-	background: #1e5780;
-	color: white;
+	background: #38382d;
+	color: rgb(0, 0, 0);
 }
 
 .metadata {
@@ -264,7 +264,7 @@ a:active {
 .definition-section {
 	margin: 20px;
 	padding: 5px;
-	color: #004677;
+	color: #ff9900;
 	border-top: solid thin #ff9900 4px;
 	border-bottom: solid thin #ff9900 4px;
 	overflow-wrap: break-word;
@@ -325,11 +325,11 @@ a:active {
 }
 
 .add-new-word {
-	box-shadow: 0 4px 8px #000;
+	box-shadow: 0 4px 8px #ff2ab8;
 	flex-direction: column;
 	border-radius: 0.5rem;
-	color: #E0FAFF;
-	background: #050d79;
+	color: #ffffff;
+	background: #da1feb;
 	margin: 1rem;
 	padding: 1rem;
 }
@@ -413,12 +413,13 @@ textarea.input {
 }
 
 .footer {
-	background: #2d566c;
-	color: #e0faff;
+	background: #ff56b3;
+	color: #000000;
 	padding: 1rem;
 	border-radius: 0.5rem;
-	box-shadow: 0 4px 8px black;
+	box-shadow: 0 4px 8px rgb(142, 117, 255);
 	margin: 1rem;
+	font-size: 25px;
 }
 
 .footer p:first-child {
@@ -439,6 +440,7 @@ output {
 
 .downdoot-button .arrow-icon {
 	transform: rotate(180deg);
+	color: #000000;
 }
 
 .downdoot-button[aria-pressed=true] .arrow-icon {
@@ -472,6 +474,7 @@ output {
 .filter-area label {
 	display: inline-block;
 	padding: 0.25rem 0;
+	font-size: 35px;
 }
 
 .combobox-button {
@@ -482,8 +485,8 @@ output {
 	font-size: inherit;
 	font-family: inherit;
 	color: white;
-	background: #1e5780;
-	border: 2px solid #606060;
+	background: #c855eb;
+	border: 2px solid #ff72b8;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
