@@ -10,8 +10,9 @@ html {
 body {
 	margin: 0;
 	font-family: LearningCurve;
-	background: #f897e8;
-	color: #ff02d5;
+	color: #ff8fdd;
+	background-color: #ff682c;
+	font-weight: 700;
 }
 
 #root {
@@ -60,12 +61,12 @@ body {
 	border-radius: 20px;
 	border: 2px solid #000000;
 	background: #cc00ff;
-	color: rgb(132, 0, 255);
+	color: rgb(252, 179, 248);
 }
 
 .button:hover,
 .button:focus {
-	background: #606060;
+	background: #ff78e2;
 }
 
 summary {
@@ -140,7 +141,7 @@ a:active {
 .header-section {
 	color: white;
 	text-align: center;
-	background: #ff34b1;
+	background: #ff8fdd;
 	position: relative;
 }
 
@@ -152,11 +153,10 @@ a:active {
 
 .word {
 	padding: 20px;
-	font-size: 2.7rem;
+	font-size: 4rem;
 	font-weight: bold;
 	margin: 0;
-	color: #7a08a7;
-	font-family: Arial;
+	color: hsl(29, 100%, 51%);
 	text-wrap: balance;
 	overflow-wrap: break-word;
 }
@@ -173,7 +173,7 @@ a:active {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background: #ff34b1;
+	background: #ff8fdd;
 	color: white;
 	padding: 18px;
 	text-align: center;
@@ -182,13 +182,14 @@ a:active {
 .footer-section p {
 	margin: 0;
 	text-align: center;
+	font-family: sans-serif;
 }
 
 .interactive-metadata {
 	display: flex;
 	justify-content: left;
 	gap: 0.25rem;
-	background: #7a08a7;
+	background: #ff682c;
 	color: white;
 	border-radius: 0.5rem;
 	padding: 0.5rem;
@@ -264,10 +265,11 @@ a:active {
 .definition-section {
 	margin: 20px;
 	padding: 5px;
-	color: #ff9900;
+	color: #ff7b00;
 	border-top: solid thin #ff9900 4px;
 	border-bottom: solid thin #ff9900 4px;
 	overflow-wrap: break-word;
+	font-size: 2rem;
 }
 
 .github-logo {
@@ -280,7 +282,7 @@ a:active {
 .tooltip {
 	position: absolute;
 	background: black;
-	color: white;
+	color: rgb(255, 255, 255);
 	padding: 6px 9px;
 	display: inline;
 	border-radius: 5px;
@@ -302,7 +304,7 @@ a:active {
 }
 
 .required-text {
-	color: #ff1b04;
+	color: #ff7b00;
 }
 
 .add-new-word summary {
@@ -325,13 +327,14 @@ a:active {
 }
 
 .add-new-word {
-	box-shadow: 0 4px 8px #ff2ab8;
+	box-shadow: 0 4px 8px #ff6b09;
 	flex-direction: column;
 	border-radius: 0.5rem;
 	color: #ffffff;
-	background: #da1feb;
+	background: #ff8fdd;
 	margin: 1rem;
 	padding: 1rem;
+	font-size: 20px;
 }
 
 .add-new-word details {
@@ -374,7 +377,7 @@ a:active {
 	padding-right: 1rem;
 	font-family: inherit;
 	font-size: inherit;
-	border: 3px solid #3498db;
+	border: 3px solid #f812be;
 }
 
 textarea.input {
@@ -393,7 +396,7 @@ textarea.input {
 }
 
 .submit-button {
-	background: #007bff;
+	background: #ff6cf3;
 	color: white;
 	padding: 10px 15px;
 	border: none;
@@ -405,7 +408,7 @@ textarea.input {
 
 .submit-button:hover,
 .submit-button:focus {
-	background: #0056b3;
+	background: #ff6cf3c0;
 }
 
 .amount-words-shown {
@@ -420,6 +423,7 @@ textarea.input {
 	box-shadow: 0 4px 8px rgb(142, 117, 255);
 	margin: 1rem;
 	font-size: 25px;
+	font-weight: 500;
 }
 
 .footer p:first-child {
@@ -485,8 +489,8 @@ output {
 	font-size: inherit;
 	font-family: inherit;
 	color: white;
-	background: #c855eb;
-	border: 2px solid #ff72b8;
+	background: #ff8800;
+	border: 2px solid rgb(255, 197, 7);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -507,10 +511,11 @@ output {
 	padding: 0.5rem;
 	box-sizing: border-box;
 	border-radius: 0.5rem;
-	background: #2d566c;
+	background: #ff6905;
 	color: white;
 	position: absolute;
 	inset: unset;
+	font-family: sans-serif;
 }
 
 .listbox-option {
@@ -545,4 +550,8 @@ output {
 	height: calc(100% + 0.12rem);
 	background-image: url(/checkmark.svg);
 	background-size: 100% 100%;
+}
+
+form div{
+	font-size: 2rem;
 }
