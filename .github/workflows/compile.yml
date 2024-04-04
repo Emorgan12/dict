@@ -2,8 +2,6 @@ name: Compile and push to Docker Hub
 
 on:
   push:
-    branches:
-      - main
     tags:
       - 'v*' # Only run workflow on version tags, e.g. v1.0.0, v1.0.1, v1.0.2, etc.'
     
@@ -69,6 +67,8 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64,linux/arm64/v8
         push: true
-        tags: ${{ vars.DOCKER_USERNAME }}/dict:latest
+        tags: |
+          ${{ vars.DOCKER_USERNAME }}/dict:latest
+          ${{ vars.DOCKER_USERNAME }}/dict:${{ env.VERSION }}
         build-args: VERSION=${{ env.VERSION }}
 
