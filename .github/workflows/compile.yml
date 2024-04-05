@@ -1,10 +1,6 @@
-name: Compile and push to Docker Hub
+name: Compile and push
 
 on:
-  push:
-    tags:
-      - 'v*' # Only run workflow on version tags, e.g. v1.0.0, v1.0.1, v1.0.2, etc.'
-    
   workflow_dispatch:
 
 jobs:
@@ -48,8 +44,9 @@ jobs:
     - name: Login to Docker Hub
       uses: docker/login-action@v3
       with:
-        username: ${{ vars.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Download static files
       uses: actions/download-artifact@v4
@@ -59,7 +56,7 @@ jobs:
     
     - name: Get version
       id: version
-      run: echo "VERSION=$(GITHUB_REF#refs/tags/)" >> $GITHUB_ENV
+      run: echo "VERSION=latest" >> $GITHUB_ENV
     
     - name: Build and push
       uses: docker/build-push-action@v5
@@ -68,7 +65,6 @@ jobs:
         platforms: linux/amd64,linux/arm64/v8
         push: true
         tags: |
-          ${{ vars.DOCKER_USERNAME }}/dict:latest
-          ${{ vars.DOCKER_USERNAME }}/dict:${{ env.VERSION }}
+          emma-dict:latest
         build-args: VERSION=${{ env.VERSION }}
 
