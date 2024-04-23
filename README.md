@@ -2,7 +2,7 @@
 
 A custom themed version of the likes-gay/dict that has been recoloured in pink and orange by Emorgan12
 
-It is quickly deployable in a [Docker contianer](https://ghcr.io/emorgan12/dict)
+It is quickly deployable in a [Docker container](https://ghcr.io/emorgan12/dict)
 
 ## About
 
